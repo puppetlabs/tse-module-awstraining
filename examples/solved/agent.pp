@@ -5,7 +5,7 @@ class awstraining::agent {
     ensure            => 'running',
     availability_zone => 'us-west-2b',
     image_id          => 'ami-d440a6e7',
-    instance_type     => 'm4.medium',
+    instance_type     => 'm4.large',
     key_name          => 'chris.barker',
     region            => 'us-west-2',
     security_groups   => ['tse-awstraining-agentsg'],
@@ -15,7 +15,7 @@ class awstraining::agent {
       'project'       => 'awstraining',
       'created_by'    => $username,
     },
-    user_data         => 'puppet:///modules/awstraining/rpm.sh',
+    user_data         => file('awstraining/rpm.sh'),
   }
 
 
