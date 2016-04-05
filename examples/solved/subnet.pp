@@ -7,8 +7,8 @@ class awstraining::subnet {
   ec2_vpc_subnet { 'tse-awstraining-avzb':
     ensure                  => present,
     region                  => 'us-west-2',
-    vpc                     => 'tse-awstraining-us-west-2',
-    cidr_block              => '10.70.20.0/24',
+    vpc                     => 'tse-awstraining-vpc',
+    cidr_block              => '10.70.40.0/24',
     availability_zone       => 'us-west-2b',
     route_table             => 'tse-awstraining-routes',
     map_public_ip_on_launch => true,
@@ -17,7 +17,7 @@ class awstraining::subnet {
   ec2_vpc_subnet { 'tse-awstraining-avzc':
     ensure                  => present,
     region                  => 'us-west-2',
-    vpc                     => 'tse-awstraining-us-west-2',
+    vpc                     => 'tse-awstraining-vpc',
     cidr_block              => '10.70.30.0/24',
     availability_zone       => 'us-west-2c',
     route_table             => 'tse-awstraining-routes',

@@ -8,7 +8,7 @@ class awstraining::agent {
     instance_type     => 'm4.medium',
     key_name          => 'chris.barker',
     region            => 'us-west-2',
-    security_groups   => ['tse-awstraining-agentsg','tse-awstraining-prep'],
+    security_groups   => ['tse-awstraining-agentsg'],
     subnet            => 'tse-awstraining-avzb',
     tags              => {
       'department'    => 'tse',

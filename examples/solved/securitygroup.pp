@@ -10,6 +10,11 @@ class awstraining::securitygroup {
     vpc         => 'tse-awstraining-vpc',
     description => 'Security group for use by the Master, and associated ports',
     ingress     => [
+    {
+      protocol => 'tcp',
+      port     => '22',
+      cidr     => '0.0.0.0/0',
+    },
       {
         protocol => 'tcp',
         port     => '80',
@@ -38,7 +43,4 @@ class awstraining::securitygroup {
     ],
     tags => $aws_tags,
   }
-
-
-
 }

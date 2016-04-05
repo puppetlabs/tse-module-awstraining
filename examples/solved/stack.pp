@@ -7,7 +7,7 @@ class awstraining::stack {
     instance_type     => 'm4.medium',
     key_name          => 'chris.barker',
     region            => 'us-west-2',
-    security_groups   => ['tse-awstraining-agentsg','tse-awstraining-prep'],
+    security_groups   => ['tse-awstraining-agentsg'],
     tags              => {
       'department'    => 'tse',
       'project'       => 'awstraining',
@@ -16,16 +16,16 @@ class awstraining::stack {
     user_data         => 'puppet:///modules/awstraining/rpm.sh',
   }
 
-  Ec2_Instance { "centos-stack-01-${username}":
-    availability_zone => 'us-west-2b',
-    subnet            => 'tse-awstraining-avzb',
-  }
   Ec2_Instance { "centos-stack-02-${username}":
     availability_zone => 'us-west-2c',
     subnet            => 'tse-awstraining-avzc',
   }
+  Ec2_Instance { "centos-stack-01-${username}":
+    availability_zone => 'us-west-2b',
+    subnet            => 'tse-awstraining-avzb',
+  }
   Ec2_Instance { "centos-stack-03-${username}":
-    availability_zone => 'us-west-2a',
+    availability_zone => 'us-west-2c',
     subnet            => 'tse-awstraining-avza',
   }
 }
