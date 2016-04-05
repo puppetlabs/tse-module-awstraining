@@ -1,15 +1,15 @@
 AWS Informational Session 101
 
 Slide Content:
-[U-Penn CS AWS Slidses](http://www.cis.upenn.edu/~nets212/slides/05-CloudBasics.ppt)
-[AWS Lifecycle Blog/PDF](https://puppetlabs.com/blog/making-life-puppet-and-aws-or-other-cloud-services-easier)
+- [U-Penn CS AWS Slidses](http://www.cis.upenn.edu/~nets212/slides/05-CloudBasics.ppt)
+- [AWS Lifecycle Blog/PDF](https://puppetlabs.com/blog/making-life-puppet-and-aws-or-other-cloud-services-easier)
 
 References/Modules:
-[Puppet Labs AWS Module](https://github.com/puppetlabs/puppetlabs-aws)
-[TSE AWSEnv](https://github.com/puppetlabs/tse-module-awsenv)
-[ec2tags modules](https://github.com/mrzarquon/puppet-ec2tags)
-[certsigner](https://github.com/mrzarquon/mrzarquon-certsigner)
-[autosign](https://github.com/danieldreier/puppet-autosign)
+- [Puppet Labs AWS Module](https://github.com/puppetlabs/puppetlabs-aws)
+- [TSE AWSEnv](https://github.com/puppetlabs/tse-module-awsenv)
+- [ec2tags modules](https://github.com/mrzarquon/puppet-ec2tags)
+- [certsigner](https://github.com/mrzarquon/mrzarquon-certsigner)
+- [autosign](https://github.com/danieldreier/puppet-autosign)
 
 Guide:
 
